@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/XML_user_homepage"
+            android:icon="@drawable/book"
+            android:title="HomePage" />
+
+        <item
+            android:id="@+id/XML_user_history"
+            android:icon="@drawable/ic_history_black"
+            android:title="History" />
+
+        <item
+            android:id="@+id/XML_user_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Profile Settings" />
+
+        <item
+            android:id="@+id/XML_user_select_service"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Select Service" />
+
+        <item
+            android:id="@+id/XML_user_help"
+            android:icon="@drawable/ic_help_black"
+            android:title="FAQ and HELP" />
+
+        <item
+            android:id="@+id/XML_signout"
+            android:title="Sign Out"
+            android:icon="@drawable/ic_lock_outline" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:title="Establised in 2016" />
+        </menu>
+    </item>
+
+</menu>

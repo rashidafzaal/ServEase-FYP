@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sheikhrashid.fyp.Register">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qilla" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@android:color/black" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/XML_txt"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="25dp"
+                android:text="ServEase"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/XML_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XML_txt"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Name..."
+
+                android:inputType="textPersonName"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+
+            <EditText
+                android:id="@+id/XML_Email"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XML_Name"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Email..."
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+
+            <EditText
+                android:id="@+id/XML_Password"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XML_Email"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+
+            <CheckBox
+                android:id="@+id/Register_checkbox"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XML_Password"
+                android:text="Show Password"
+                android:textColor="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+
+            <EditText
+                android:id="@+id/XML_Phone"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Register_checkbox"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Phone..."
+                android:inputType="phone"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/EditTextTheme" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XML_Phone"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@android:color/white"
+                android:entries="@array/professions_array"
+                android:paddingBottom="15dp"
+                android:paddingTop="25dp"
+                android:popupBackground="#000000"
+
+                android:spinnerMode="dropdown"
+                android:theme="@style/BlackText" />
+
+            <TextView
+                android:id="@+id/not"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/spinner1"
+                android:text="* Not Required for User"
+                android:theme="@style/BlackText" />
+            <Spinner
+                android:id="@+id/spinner2"
+
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/not"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@android:color/white"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="25dp"
+                android:popupBackground="#000000"
+                android:prompt="@string/prompt"
+                android:spinnerMode="dropdown"
+                android:theme="@style/BlackText" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/not"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/RegUserBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="20dp"
+                    android:text="Register As User" />
+
+                <Button
+                    android:id="@+id/RegProviderBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="20dp"
+                    android:text="Register as Provider"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

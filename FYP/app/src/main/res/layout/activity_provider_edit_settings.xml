@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_provider_edit_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sheikhrashid.fyp.Provider.ProviderEditSettings">
+
+
+    <ImageView
+        android:id="@+id/Provider_XML_user_edit_img"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/admin"/>
+
+
+    <TextView
+        android:id="@+id/Provider_XML_edit_txt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE YOUR PICTURE."
+        android:layout_toRightOf="@+id/Provider_XML_user_edit_img"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/Provider_XML_edit_upload_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Provider_XML_edit_txt"
+        android:layout_marginLeft="97dp"
+        android:text="Upload..."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Provider_XML_edit_upload_btn"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT YOUR NAME: " />
+
+        <EditText
+            android:id="@+id/P_editsetting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT YOUR PASSWORD: " />
+
+        <EditText
+            android:id="@+id/P_editsetting_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT YOUR DETIALS: " />
+
+        <EditText
+            android:id="@+id/P_editsetting_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT YOUR ADDRESS: " />
+
+        <EditText
+            android:id="@+id/P_editsetting_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT YOUR SERVICE: " />
+
+        <EditText
+            android:id="@+id/P_editsetting_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Provider_XML_save"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

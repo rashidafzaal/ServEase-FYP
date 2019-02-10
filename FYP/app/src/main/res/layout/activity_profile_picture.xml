@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sheikhrashid.fyp.ProfilePicture">
+
+    <TextView
+        android:id="@+id/XML_PP_txt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="ServEase"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+
+
+    <View
+        android:id="@+id/XML_line"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/XML_PP_txt"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_dark" />
+
+
+    <ImageView
+        android:id="@+id/XML_profile_images"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/XML_line"
+        android:src="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/XML_choose_txt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XML_line"
+        android:layout_toRightOf="@+id/XML_profile_images"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="Choose your Profile Picture." />
+
+    <Button
+        android:id="@+id/XML_btn_upload"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/XML_choose_txt"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/XML_profile_images"
+        android:text="Upload..." />
+
+    <View
+        android:id="@+id/XML_line2"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/XML_profile_images"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_dark" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XML_line2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Name: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Email: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Password: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Phone: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Profession: "
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XML_line2"
+        android:layout_toRightOf="@+id/linear1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/XML_txtView1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Right of Name: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/XML_txtView2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Right of Name: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/XML_txtView3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Right of Name: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/XML_txtView4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Right of Name: "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/XML_txtView5"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Right of Name: "
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/XML_shopLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Type your Shop's Location..."
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:id="@+id/XML_P_detail"
+
+            android:layout_below="@+id/XML_shopLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Write Details about yourself..."
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/XML_NEXT"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Agree and Next" />
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sheikhrashid.fyp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.sheikhrashid.fyp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logofyp2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginRegister" />
+        <activity android:name=".Login" />
+        <activity android:name=".ServicesList" />
+        <activity android:name=".Register" />
+        <activity android:name=".ProfilePicture" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDjbf_HNLQEUqW74J-XR5A0xgxqPYW6Qfc" />
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.v2.API_KEY" -->
+        <!-- android:value="AIzaSyDnkpU6ZyVEBfcQBeW7t-bpiW_iZjnTnsA" /> -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPayment"
+            android:label="Payment"
+            android:parentActivityName=".Map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Map" />
+        </activity>
+        <activity
+            android:name=".UserProfileSettings"
+            android:label="Profile Settings"
+            android:parentActivityName=".Map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Map" />
+        </activity>
+        <activity
+            android:name=".UserHistory"
+            android:label="History"
+            android:parentActivityName=".Map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Map" />
+        </activity>
+        <activity
+            android:name=".UserHelp"
+            android:label="Help"
+            android:parentActivityName=".Map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Map" />
+        </activity>
+        <activity
+            android:name=".UserEditSettings"
+            android:label="Edit Settings"
+            android:parentActivityName=".UserProfileSettings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.UserProfileSettings" />
+        </activity>
+        <activity
+            android:name=".ProviderInformation"
+            android:label="Provider Information"
+            android:parentActivityName=".Map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Map" />
+        </activity>
+        <activity
+            android:name=".PasswordVerfication"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Login" />
+        </activity>
+        <activity
+            android:name=".Provider.ProviderMap"
+            android:label="ServEase"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Provider.ProviderHistory"
+            android:label="History"
+            android:parentActivityName=".Provider.ProviderMap">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Provider.ProviderMap" />
+        </activity>
+        <activity
+            android:name=".Provider.ProviderProfileSettings"
+            android:label="Profile Settings"
+            android:parentActivityName=".Provider.ProviderMap">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Provider.ProviderMap" />
+        </activity>
+        <activity
+            android:name=".Provider.ProviderHelp"
+            android:label="FAQ and Help"
+            android:parentActivityName=".Provider.ProviderMap">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Provider.ProviderMap" />
+        </activity>
+        <activity
+            android:name=".Provider.ProviderEditSettings"
+            android:label="Edit Settings"
+            android:parentActivityName=".Provider.ProviderProfileSettings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.Provider.ProviderProfileSettings" />
+        </activity>
+        <activity
+            android:name=".ProvidersList"
+            android:parentActivityName=".ServicesList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sheikhrashid.fyp.ServicesList" />
+        </activity>
+        <activity android:name=".DialogBox"></activity>
+    </application>
+
+</manifest>

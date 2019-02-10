@@ -1,0 +1,35 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">ServEase</string>
+    <string name="prompt"><font fgcolor="#FFFFFF">Select Your Service...</font></string>
+    <string name="prompt2"><font fgcolor="#FFFFFF">Select  Sub-Service...</font></string>
+    <string name="logintxt">Login</string>
+    <string name="forgottxt">Forgot Password?</string>
+    <string name="showtxt">Show Password</string>
+
+    <string name="ip">http://192.168.10.7</string>
+
+    <string-array name="professions_array">
+
+        <item>Choose Your Profession...</item>
+        <item>Vehicles</item>
+        <item>Shifting Vehicles</item>
+        <item>Labour</item>
+        <item>Home Tutors</item>
+        <item>Tailors</item>
+        <item>Plumbers</item>
+        <item>Electricians</item>
+        <item>Labour</item>
+        <item>Tailors</item>
+        <item>Home Tutors</item>
+
+    </string-array>
+    <string name="title_activity_map">ServEase</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_provider_map">ProviderMap</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_provider_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sheikhrashid.fyp.ProviderInformation">
+
+
+
+    <ImageView
+        android:id="@+id/XML_providers_image"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/XML_line"
+        android:src="@drawable/admin"/>
+
+
+
+    <View
+        android:id="@+id/XML_line2"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/XML_providers_image"
+        android:background="@android:color/holo_green_dark"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XML_line2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details: "
+            android:textColor="@android:color/black"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XML_line2"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/linear1"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/XML_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rashid Afzaal "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/XML_service"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor (Math Subject) "
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/XML_phoneNo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03158280123"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/XML_address"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="House # 1, Street # 16 Wasan Pura"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX=".3"
+            android:scaleY=".3"
+            android:layout_marginLeft="-85dp"
+            android:layout_marginTop="-15dp" />
+
+        <TextView
+            android:id="@+id/XML_details"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="I am providing the service to teach Math anywhere in the Lahore. Taking specific cost of pe Lecture or an Hour. Have experience of 4 years in teaching with proper teaching training. Contact me for more Details."/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/XML_Call"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:text="Call"
+
+
+        android:background="@color/colorAccent" />
+
+
+
+    <Button
+        android:id="@+id/XML_Request"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Request"/>
+
+
+</RelativeLayout>
