@@ -17,4 +17,3 @@ A location based service provider app, where users can register and find the nea
 - Wait till Provider Accept/Reject the Request
 
 ## Screenshots
-![alt text](screenshots/1.png "Description goes here")
